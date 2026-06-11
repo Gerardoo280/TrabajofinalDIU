@@ -129,177 +129,213 @@ Si tuviera que destacar un aprendizaje principal, sería entender que las mejore
 ---
 
 ## PARTE II: Caso de Estudio — EcoMercado UGR
-
+ 
 ### Contexto del proyecto
-
-El **EcoMercado UGR** es una iniciativa de la Universidad de Granada y la Red Agroecológica de Granada, celebrada mensualmente (el cuarto jueves de cada mes) en los Paseíllos del Campus de Fuentenueva. Se enmarca en el proyecto europeo **SOILCRATES** (Living Lab Granada Tierra Viva) y reúne a pequeños productores locales con principios agroecológicos. No es solo un punto de venta: es un **espacio de aprendizaje e intercambio** con especial vinculación a la comunidad universitaria, lo que tiene implicaciones directas en el diseño de su presencia digital.
-
+ 
+El **EcoMercado UGR** es una iniciativa de la Universidad de Granada y la Red Agroecológica de Granada, celebrada mensualmente los jueves en los Paseíllos Universitarios del Campus de Fuentenueva (9:30–14:00 h). Se enmarca en el proyecto **Granada Tierra Viva** (Impronta Granada) y reúne a productores locales de proximidad agroecológica. Más allá de un mercado, es un espacio de aprendizaje, intercambio y conexión entre sostenibilidad, territorio y comunidad universitaria. Esta dimensión social y educativa tiene implicaciones directas en el diseño de su presencia digital: el objetivo no es solo informar de una fecha, sino construir comunidad y continuidad entre ediciones.
+ 
+El **problema central identificado** es que el EcoMercado UGR carece de presencia digital propia. La información se distribuye de forma fragmentada entre páginas institucionales (Impronta Granada, Canal UGR) con arquitecturas diseñadas para otros propósitos, lo que genera fricción en el journey de cualquier usuario que quiera informarse antes de asistir.
+ 
 ---
-
+ 
 ### 2a. Análisis de referentes
-
-#### Referente 1: Mercat de Pages — Xarxa de Consum Solidari
-
-**Perfil de usuario hipotético:** consumidor adulto (30-55 años), conciencia ecológica, usuario ocasional de plataformas web, busca información práctica sobre cuándo y dónde se celebra el mercado.
-
-**Puntos fuertes:**
-
-La sección "Mercados de Campesinos" está accesible desde el menú principal en un solo clic, cumpliendo la heurística H3 de Nielsen (*control y libertad del usuario*) y reduciendo la carga cognitiva de localización. La web ofrece información bilingüe con iconos de bandera, respondiendo bien al principio de **internacionalización**.
-
-**Puntos débiles:**
-
-El principal problema es la **disonancia de contexto**: la sección de mercados forma parte de una web institucional de una ONG de comercio justo. El usuario que llega buscando fecha, lugar y productores encuentra una arquitectura diseñada para presentar la organización, no para facilitar la asistencia al mercado. Aplicando el **modelo mental** del usuario (Norman, 2013), el visitante espera un patrón de "página de evento" (fecha destacada, mapa, lista de productores, fotos) que esta web no satisface.
-
-La **densidad de texto** sin imágenes de producto genera una experiencia informativa pero poco motivadora para asistir. Tampoco hay **adaptación responsiva optimizada** para móvil, crítico dado que el usuario suele consultar información el mismo día del mercado desde el teléfono.
-
-**Valoración:** funcionalmente correcta para comunicación institucional, con importantes carencias como herramienta de captación de asistentes. La estructura de navegación no está orientada a las tareas principales del usuario visitante.
-
+ 
+Para este análisis se adopta el rol de evaluador experto, aplicando los criterios del **proceso de diseño centrado en usuario** y las **heurísticas de Nielsen** como marco de referencia objetivo.
+ 
 ---
-
+ 
+#### Referente 1: Mercat de Pages — Xarxa de Consum Solidari (xarxaconsum.org)
+ 
+**¿Quién es el usuario de esta página?**
+ 
+El perfil más probable es un consumidor adulto (30-55 años) con conciencia ecológica y conocimiento previo de la organización, que accede para encontrar información práctica sobre los mercados: cuándo, dónde, qué productores participan. También puede ser un usuario nuevo que llega por búsqueda orgánica ("mercado ecológico Barcelona"). En ambos casos, la tarea principal es informacional, no transaccional.
+ 
+**¿Qué busca/necesita?**
+ 
+Las tareas críticas identificadas son: (1) localizar el mercado más cercano, (2) saber el horario, (3) conocer qué productos hay disponibles. Tareas secundarias: contactar con un productor, suscribirse a novedades.
+ 
+**Puntos fuertes desde el factor humano:**
+ 
+La sección "Mercados de campesinos" está accesible desde el menú principal en un clic directo, lo que aplica correctamente la heurística H3 (*control y libertad del usuario*) y minimiza la profundidad de navegación para la tarea principal. El listado de productores con foto, nombre y categoría responde bien al principio de **reconocimiento antes que recuerdo** (H6 de Nielsen): el usuario puede identificar visualmente si hay productos de su interés sin leer texto. La web ofrece además selector de idioma (español/catalán), respondiendo al criterio de **internacionalización**.
+ 
+**Problemas detectados:**
+ 
+El problema estructural más relevante es la **disonancia de contexto**: la página de mercados vive dentro de una web institucional de una ONG de comercio justo. El usuario que llega buscando información práctica de asistencia encuentra una arquitectura diseñada para comunicar la organización, no para resolver sus tareas. Aplicando el concepto de **modelo mental** de Norman (2013): el visitante espera el patrón "página de evento" (fecha destacada, mapa, lista de productos, CTA de asistencia) y la web no lo satisface, lo que genera desorientación y aumenta el tiempo en tarea.
+ 
+En términos de arquitectura de información, cada mercado (Fort Pienc, Eixample, Guinardó…) está presentado como un bloque de texto con múltiples enlaces (localización, Telegram, WhatsApp, formulario de pedido) sin jerarquía visual clara, lo que viola la heurística H8 (*diseño estético y minimalista*): se muestran cuatro canales de contacto por mercado de forma simultanea cuando el usuario probablemente solo necesita uno.
+ 
+No se detecta adaptación responsiva optimizada para móvil, lo cual es un fallo crítico dado que el usuario que consulta dónde ir un sábado por la mañana lo hace desde el teléfono. Las tablas de mercados y bloques de texto se comprimen sin reflow adecuado, dificultando la lectura en pantallas pequeñas.
+ 
+**Valoración global:** la web cumple su función como canal de comunicación institucional, pero falla como herramienta orientada a la tarea del usuario asistente. La estructura de navegación refleja la organización interna de la ONG, no el modelo mental del visitante.
+ 
+---
+ 
 #### Referente 2: Nuestras Huertas (nuestrashuertas.com)
-
-**Perfil de usuario hipotético:** consumidor urbano (25-45 años), alta frecuencia de uso de e-commerce, interesado en productos ecológicos de proximidad.
-
+ 
+*Nota: esta web bloquea el acceso automatizado. El análisis se basa en el análisis del snippet de búsqueda, metadatos públicos y descripción disponible.*
+ 
+**¿Quién es el usuario de esta página?**
+ 
+Consumidor urbano (25-45 años) con hábito de compra online y valores de consumo responsable, que busca tanto información sobre mercados físicos como la posibilidad de hacer pedidos o suscripciones a cajas de productos.
+ 
 **Puntos fuertes:**
-
-La **propuesta de valor es clara y visible** desde el primer scroll: productos ecológicos, de temporada, de agricultores locales. La integración de **e-commerce con contexto de mercado físico** es una fortaleza diferenciadora: el usuario puede comprar online y también localizar mercados, satisfaciendo distintos momentos del journey del consumidor ecológico.
-
-**Puntos débiles:**
-
-Incurre en **sobrecarga de información** en algunas secciones: demasiadas opciones visibles simultáneamente sin jerarquía visual clara, dificultando el escaneo rápido (viola H8 de Nielsen: *diseño estético y minimalista*). La **adaptación a móvil**, aunque presente, no está optimizada para el contexto de consulta rápida en desplazamiento.
-
+ 
+La propuesta de valor (productos ecológicos, de temporada, de agricultores locales) está definida y visible desde el primer contacto, lo que aplica el principio de **claridad en el modelo conceptual** del producto: el usuario sabe inmediatamente qué ofrece el servicio y para quién es. La integración de canal online y mercado físico satisface distintos momentos del journey del consumidor ecológico.
+ 
+**Problemas detectados:**
+ 
+Según la información disponible, la plataforma presenta sobrecarga de opciones en algunas secciones, lo que dificulta el escaneo rápido (viola H8). La orientación está más centrada en el canal e-commerce que en facilitar la asistencia a mercados físicos, lo que no se alinea bien con el caso de uso del EcoMercado UGR, donde el componente presencial y comunitario es el núcleo de la propuesta.
+ 
 ---
-
+ 
 ### 2b. Insights y Propuesta de Valor para EcoMercado UGR
-
-#### Insights extraídos del análisis
-
-**Insight 1 — El usuario llega con objetivos muy concretos:** los asistentes habituales del EcoMercado (estudiantes, personal universitario, vecinos del entorno) buscan información específica: ¿hay mercado este mes? ¿qué productores van? ¿a qué hora? La plataforma debe responder a esas tareas en el menor número de pasos posible.
-
-**Insight 2 — La comunidad universitaria es la ventaja diferencial:** a diferencia de otros mercados ecológicos urbanos, el EcoMercado UGR tiene acceso a una comunidad joven, tecnológicamente activa y con valores de sostenibilidad, lo que abre la posibilidad de diseñar una experiencia más participativa.
-
-**Insight 3 — La ausencia de presencia digital específica es el problema central:** el EcoMercado carece de web o app propia. La información se distribuye fragmentada entre páginas institucionales (Impronta Granada, Medialab UGR, Canal UGR), generando fricción en el journey del usuario.
-
-**Insight 4 — El componente educativo y social necesita espacio digital:** la dimensión de living lab (charlas, origen de los alimentos, productores con historia) no se comunica digitalmente de forma efectiva en ninguno de los canales actuales.
-
+ 
+#### Insights extraídos del análisis comparativo
+ 
+**Insight 1 — Ningún referente resuelve bien la tarea del usuario asistente ocasional.** Mercat Pages prioriza la comunicación institucional y Nuestras Huertas prioriza el e-commerce. El usuario que quiere saber simplemente "¿hay mercado este jueves y qué voy a encontrar?" no tiene una respuesta clara en ninguno de los dos. Esto define la oportunidad de diseño principal para el EcoMercado UGR.
+ 
+**Insight 2 — El componente de comunidad y aprendizaje es un diferencial no explotado digitalmente.** Ambos referentes listan productores, pero ninguno aprovecha el potencial narrativo de cada productor (historia, territorio, técnicas) ni el componente educativo (talleres, recetas de temporada, charlas). Para el EcoMercado UGR, que tiene la universidad como contexto, este es el valor diferencial que justifica una presencia digital propia más allá de una simple página de evento.
+ 
+**Insight 3 — La fragmentación de la información es el principal problema de usabilidad del EcoMercado UGR actual.** Sin un punto de entrada único y orientado al usuario, la fricción en el journey es máxima: el usuario debe navegar entre webs institucionales con arquitecturas no diseñadas para sus tareas. Esto se traduce directamente en abandono y menor asistencia.
+ 
+**Insight 4 — El perfil de usuario universitario exige diseño mobile-first.** El público principal (estudiantes, PAS, PDI) accede a la información desde el móvil. Cualquier propuesta que no esté optimizada para este contexto falla en su caso de uso más frecuente.
+ 
 ---
-
-#### Personas para el EcoMercado UGR
-
-**Lucía, 22 años, estudiante de Biología.** Vive cerca del campus de Fuentenueva. Le interesan los productos locales pero no siempre recuerda cuándo es el mercado ni qué productores asisten. Usa el smartphone como principal canal de información. Necesita: recordatorio de fecha, lista de productores del mes, horario, cómo llegar.
-
-**Andrés, 45 años, profesor asociado de la ETSII.** Consume productos ecológicos habitualmente y le gusta conocer el origen de lo que come. Reserva los jueves del mercado en su agenda pero tiene poco tiempo entre semana. Necesita: información detallada de productores, contenido sobre prácticas agroecológicas, posibilidad de anticipar qué encontrará antes de ir.
-
+ 
+#### Definición de personas
+ 
+**Persona 1 — Lucía, 22 años, estudiante de Biología (ETSI Caminos, Campus Fuentenueva)**
+Pasa por los Paseíllos todos los días pero no siempre sabe cuándo hay mercado. Le interesan los productos locales y le gustaría repetir, pero la falta de información clara hace que se entere por casualidad. Dispositivo principal: iPhone. Necesidades: saber si hay mercado esta semana, horario, qué tipo de productos habrá. Frustración actual: "He llegado cuando ya estaban recogiendo".
+ 
+**Persona 2 — Andrés, 47 años, profesor titular de la ETSII**
+Consume productos ecológicos regularmente y valora conocer el origen de lo que come. Reserva el jueves del mercado pero tiene agenda ajustada. Necesita: lista de productores del mes, qué productos traerá cada uno, contenido sobre prácticas agroecológicas. Frustración actual: "No sé qué productores van a ir hasta que llego".
+ 
+Ambas personas comparten la misma tarea inicial (¿hay mercado y cuándo?) pero divergen en profundidad de uso: Lucía es un usuario de consulta rápida; Andrés es un usuario de exploración.
+ 
 ---
-
-#### Propuesta de diseño: Web App EcoMercado UGR (Mobile-first)
-
-**Público objetivo principal:** estudiantes y personal de la UGR (18-45 años), alta penetración de smartphone, valores de sostenibilidad, patrón de uso principalmente móvil.
-
-**Propuesta de valor:** una plataforma que convierte el EcoMercado UGR en una experiencia continua, no solo un evento mensual.
-
-**Arquitectura de información propuesta:**
-
+ 
+#### Propuesta de diseño: App móvil EcoMercado UGR
+ 
+**Justificación del formato app vs. web:** dado el perfil de usuario (universitario, smartphone como dispositivo principal, consulta en contexto de movilidad), una **Progressive Web App (PWA)** ofrece el mejor equilibrio entre accesibilidad (sin descarga) y experiencia nativa (notificaciones, añadir a pantalla de inicio). Este enfoque aplica el principio de **diseño orientado al contexto de uso** estudiado en clase.
+ 
+**Principios de diseño aplicados y justificación:**
+ 
+- **Mobile-first:** la pantalla principal debe responder la pregunta "¿hay mercado este jueves?" sin hacer scroll, con fecha, horario y ubicación visibles en el primer viewport. Cualquier otro contenido es secundario. Esto deriva directamente del análisis de tareas: la tarea de mayor frecuencia y urgencia debe estar en el nivel 0 de la interfaz.
+- **Progressive disclosure (Johnson, 2010):** se muestra primero lo esencial (cuándo, dónde, qué hay), y el usuario que quiere profundizar (historia de un productor, receta de temporada, charlas) navega voluntariamente a secciones específicas. Esto evita la sobrecarga cognitiva detectada en Mercat Pages.
+- **Consistencia y estándares (H4 Nielsen):** bottom navigation bar fija con 4 secciones, patrón estándar en apps móviles que reduce la curva de aprendizaje para usuarios nuevos. Se descarta el menú hamburguesa porque oculta las opciones y aumenta la carga cognitiva.
+- **Visibilidad del estado del sistema (H1 Nielsen):** indicador claro de si el mercado está activo este mes ("Próxima edición: jueves 26 junio" vs. "No hay mercado este mes"), evitando que el usuario llegue sin que haya mercado, que es la frustración más frecuente identificada en las personas.
+- **Accesibilidad desde el diseño:** paleta con contraste ≥ 4.5:1 (WCAG AA, criterio 1.4.3), botones con área táctil mínima de 44×44px (WCAG 2.5.5), etiquetas accesibles en todos los elementos interactivos (criterio 1.1.1). La accesibilidad no se audita al final: se diseña desde el sistema de colores.
+**Arquitectura de información:**
+ 
 ```
-EcoMercado UGR
-├── Inicio          → Próxima edición + CTA asistir
-├── El Mercado      → Fechas, mapa Campus Fuentenueva, categorías de producto
-├── Productores     → Listado del mes + ficha individual (historia, productos)
-├── Calendario      → Ediciones anteriores y próximas
-├── Aprende         → Recetas de temporada, agroecología, charlas
-└── Sobre el proyecto → Red Agroecológica / Granada Tierra Viva / SOILCRATES
+EcoMercado UGR (PWA)
+├── Inicio
+│   ├── Tarjeta hero: próxima edición (fecha, hora, lugar, mapa, +calendario)
+│   ├── Productores del mes (categorías: huerta, quesos, pan, miel, cosmética)
+│   └── Contenido destacado: receta o charla del mes
+├── Productores
+│   ├── Listado del mes con foto, nombre y categorías
+│   └── Ficha de productor (historia, técnicas, productos, contacto)
+├── Calendario
+│   ├── Próximas ediciones
+│   └── Archivo de ediciones anteriores
+├── Aprende
+│   ├── Recetas de temporada
+│   ├── ¿Qué es la agroecología?
+│   └── Charlas y actividades paralelas
+└── Sobre el proyecto
+    └── Red Agroecológica / Granada Tierra Viva / Impronta UGR
 ```
-
-**Principios de diseño aplicados:**
-
-- **Mobile-first:** dado el perfil de usuario, el diseño se concibe para móvil. Fecha, horario y ubicación deben ser visibles sin scroll en la pantalla principal.
-- **Progressive disclosure:** la pantalla principal muestra solo lo esencial (cuándo, dónde, qué hay). El usuario que quiera profundizar navega a secciones específicas, reduciendo la sobrecarga cognitiva detectada en los referentes.
-- **Affordance y feedback visual:** botones de acción principal en verde (coherente con los valores de ecología), con contraste que cumple WCAG AA (ratio ≥ 4.5:1).
-- **Consistencia y estándares:** bottom navigation bar con 4-5 secciones (no menú hamburguesa oculto) para reducir la curva de aprendizaje en usuarios nuevos.
-
+ 
+El **labelling** sigue el principio de economía de lenguaje: "Productores" en lugar de "Nuestros productores agroecológicos participantes"; "Aprende" en lugar de "Contenido educativo y divulgativo". Las etiquetas cortas reducen la carga cognitiva y son más escaneables.
+ 
 ---
-
-#### Boceto de wireframe — Pantalla principal (mobile)
-
+ 
+#### Boceto de wireframe — Pantalla principal (mobile, 390px)
+ 
 ```
-┌──────────────────────────────┐
-│  🌿 EcoMercado UGR           │
-│                              │
-│  ┌──────────────────────┐    │
-│  │  PRÓXIMA EDICIÓN     │    │
-│  │  Jueves 26 junio     │    │
-│  │  9:30 – 14:00 h      │    │
-│  │  Paseíllos Fuentenueva│   │
-│  │  [Ver en mapa] [+Cal] │    │
-│  └──────────────────────┘    │
-│                              │
-│  PRODUCTORES DEL MES (15)    │
-│  ┌──────┐ ┌──────┐ ┌──────┐ │
-│  │  🥬  │ │  🧀  │ │  🍯  │ │
-│  │Huertas│ │Quesos│ │ Miel │ │
-│  └──────┘ └──────┘ └──────┘ │
-│  [Ver todos los productores →]│
-│                              │
-│  ¿QUÉ HAY ESTA SEMANA?       │
-│  Verduras temporada · Pan    │
-│  artesano · Cosmética eco…   │
-│                              │
-│  ┌──────────────────────┐    │
-│  │  📚 APRENDE          │    │
-│  │  Receta: Gazpacho    │    │
-│  │  con tomate de la Vega│   │
-│  └──────────────────────┘    │
-│                              │
-│ [Inicio][Productores][Cal][+] │
-└──────────────────────────────┘
+┌────────────────────────────┐
+│  🌿 EcoMercado UGR    🔔   │  ← header fijo, notificaciones
+├────────────────────────────┤
+│  ┌──────────────────────┐  │
+│  │ PRÓXIMA EDICIÓN      │  │  ← tarjeta hero, primer viewport
+│  │ Jueves 26 junio      │  │
+│  │ 9:30 – 14:00 h       │  │
+│  │ Paseíllos Fuentenueva │  │
+│  │ [📍 Ver mapa][+🗓 Cal]│  │  ← 2 CTAs, verde primario
+│  └──────────────────────┘  │
+│                            │
+│  PRODUCTORES DEL MES       │
+│  ┌────┐ ┌────┐ ┌────┐     │  ← tarjetas de categoría
+│  │ 🥬 │ │ 🧀 │ │ 🍯 │     │
+│  │Huer│ │Ques│ │Miel│     │
+│  └────┘ └────┘ └────┘     │
+│  Ver todos →               │
+│                            │
+│  ┌──────────────────────┐  │
+│  │ 📚 RECETA DEL MES    │  │  ← contenido de valor, engagement
+│  │ Gazpacho con tomate  │  │
+│  │ de la Vega granadina │  │
+│  └──────────────────────┘  │
+├────────────────────────────┤
+│ [🏠][👩‍🌾][🗓][📖]          │  ← bottom nav fija, 4 secciones
+└────────────────────────────┘
 ```
-
-La **tarjeta hero** muestra los datos esenciales de la próxima edición con dos CTAs claros (mapa y calendario), resolviendo directamente la tarea más frecuente del usuario. La sección de productores del mes permite anticipar qué encontrará antes de asistir, aumentando la motivación. La sección "Aprende" convierte la plataforma en un punto de contacto continuo, no solo informativo. La **bottom nav** sigue el patrón estándar de apps móviles para minimizar la curva de aprendizaje.
-
+ 
+**Descripción de decisiones de diseño:**
+ 
+La **tarjeta hero** ocupa el primer viewport completo en mobile (sin scroll) y responde directamente la pregunta más frecuente del usuario. Los dos CTAs (mapa y calendario) tienen función clara y diferenciada: el primero resuelve la navegación física; el segundo, la planificación. Ambos usan el verde como color primario, coherente con los valores del proyecto y con un contraste que cumple WCAG AA.
+ 
+La sección de **productores del mes por categoría** permite anticipar si habrá algo de interés antes de ir, reduciendo la incertidumbre identificada en las personas ("no sé qué voy a encontrar"). Esto actúa como motivador de asistencia, especialmente para usuarios poco habituales.
+ 
+La sección **"Aprende"** convierte la plataforma en un punto de contacto continuo entre ediciones, transformando el EcoMercado de un evento puntual en una comunidad digital activa. Esta es la diferencia clave respecto a los referentes analizados.
+ 
 ---
-
-**Propuesta de valor vs. referentes:**
-
+ 
+#### Comparativa con referentes
+ 
 | Dimensión | Mercat Pages | Nuestras Huertas | EcoMercado UGR (propuesta) |
 |---|---|---|---|
-| Orientación al usuario asistente | Baja | Media | Alta |
+| Tarea principal resuelta en ≤2 clics | No | Parcial | Sí |
 | Mobile-first | No | Parcial | Sí |
-| Info detallada de productores | Básica | Media | Sí + historia |
-| Componente educativo | No | No | Sí (recetas, charlas) |
-| Integración calendario | No | No | Sí (Google/Apple Cal) |
-| Accesibilidad WCAG AA | No evaluada | No evaluada | Diseñada desde el inicio |
-
+| Info de productores con historia | No | No | Sí |
+| Componente educativo/comunidad | No | No | Sí |
+| Integración con calendario personal | No | No | Sí |
+| Accesibilidad WCAG AA por diseño | No evaluada | No evaluada | Sí |
+| Presencia digital propia | No (embebida en ONG) | Sí | Sí |
+ 
 ---
-
+ 
 ### 2c. Reflexión y autoevaluación
-
-#### Lo que he aplicado en prácticas y su relación con este caso
-
-Las prácticas del curso han cubierto la mayoría de fases que este caso requeriría:
-
-- **Investigación de usuario (P1):** desk research, análisis competitivo, personas y usability review son directamente transferibles. Para el EcoMercado añadiría observación etnográfica en el propio mercado (comportamientos reales de asistentes) y entrevistas con productores como stakeholders clave.
-- **Arquitectura de información (P2):** sitemap y labelling directamente aplicables. La diferencia aquí sería la mayor importancia del **calendario y los eventos** frente al e-commerce.
-- **Prototipado (P3):** el flujo en Figma demostró que puedo trasladar wireframes a prototipos navegables con coherencia visual. El reto adicional aquí sería diseñar fichas de productor con contenido generado por múltiples actores.
-- **Evaluación (P5):** SUS, A/B testing, Eye Tracking y WAVE/Lighthouse son directamente aplicables. La auditoría de accesibilidad es especialmente relevante para un proyecto universitario con público diverso.
-
-#### Lo que me ha faltado y habría sido valioso aplicar
-
-**Card sorting para la IA:** en las prácticas el sitemap fue más top-down. Para el EcoMercado habría sido valioso validar con usuarios reales que las categorías propuestas corresponden a sus modelos mentales.
-
-**Investigación etnográfica en contexto de uso:** observar cómo usan el móvil los asistentes durante el mercado (¿buscan info de un productor? ¿comparten en redes?) habría informado decisiones de diseño que ahora son hipótesis.
-
-**Test de accesibilidad con usuarios reales:** WAVE y Lighthouse detectan fallos técnicos, pero un test con usuarios con discapacidad visual o motriz aportaría información cualitativa imposible de captar automáticamente.
-
-**Diseño de contenido (Content Design):** la voz, el tono y la longitud de los textos tienen mucho peso en un proyecto con dimensión educativa y comunitaria como el EcoMercado, y es un aspecto poco trabajado en las prácticas.
-
+ 
+#### Lo que he aplicado en prácticas y tiene transferencia directa a este caso
+ 
+**Investigación de usuario (P1):** el User Research Plan, la creación de personas con escenarios y métricas concretas, y la Usability Review son directamente transferibles. En este caso los aplicaría con una diferencia importante: añadiría **observación etnográfica en el propio mercado** para entender los comportamientos reales de los asistentes (¿consultan el móvil durante el mercado? ¿cómo llegan al EcoMercado?), y realizaría entrevistas con productores como stakeholders clave cuyas necesidades también debe satisfacer la plataforma.
+ 
+**Arquitectura de información (P2):** el sitemap y el labelling tienen aplicación directa. La diferencia es que en el EcoMercado el eje estructural es el **calendario y los eventos**, no el catálogo de productos, lo que requiere una IA orientada al tiempo más que al inventario.
+ 
+**Prototipado en Figma (P3):** el proceso de moodboard → design system → wireframes → prototipo navegable es completamente transferible. El reto adicional aquí sería diseñar las fichas de productor considerando que el contenido lo generarían múltiples actores con distintos niveles de habilidad digital.
+ 
+**Evaluación con usuarios (P5):** SUS, A/B testing, eye tracking y WAVE/Lighthouse son directamente aplicables. La auditoría de accesibilidad es especialmente relevante en un contexto universitario con público diverso que incluye personas con discapacidad.
+ 
+#### Lo que me ha faltado y habría aportado valor en este caso
+ 
+**Card sorting para validar la arquitectura de información:** en las prácticas el sitemap se construyó de forma top-down. Para el EcoMercado habría sido valioso hacer un card sorting con usuarios reales para validar que las secciones propuestas ("Productores", "Aprende", "Calendario") corresponden a los modelos mentales del público, o si los usuarios agruparían la información de otra manera.
+ 
+**Investigación etnográfica en contexto:** observar cómo se comportan los asistentes al mercado con el móvil en mano (¿buscan info de un productor? ¿comparten en Instagram? ¿llegan con la web abierta?) habría convertido varias hipótesis de diseño en decisiones basadas en evidencia.
+ 
+**Test de accesibilidad con usuarios reales:** WAVE y Lighthouse detectan fallos técnicos de forma automatizada, pero un test con usuarios con discapacidad visual o motriz aportaría información cualitativa sobre el impacto real de esos fallos, algo que ninguna herramienta automática puede capturar.
+ 
+**Diseño de contenido (Content Design):** la voz, el tono y la longitud de los textos tienen especial importancia en un proyecto con dimensión educativa y comunitaria como el EcoMercado. Es un área poco trabajada en las prácticas y que en un proyecto real requeriría criterios explícitos de redacción UX.
+ 
 #### Conclusión
-
-Este caso me ha permitido verificar que el proceso UX aprendido durante el curso es transferible a contextos muy distintos del caso de práctica. El EcoMercado UGR plantea retos específicos —audiencia universitaria, propuesta que combina mercado físico con comunidad digital, múltiples stakeholders— que habrían enriquecido aún más el proceso de investigación y diseño. La principal conclusión es que no hay atajos: el rigor metodológico en la fase de investigación es lo que determina la calidad de las decisiones de diseño posteriores.
-
+ 
+El ejercicio de analizar el EcoMercado UGR como caso de estudio ha confirmado que el proceso UX aprendido durante el curso es transferible a contextos muy distintos del proyecto de prácticas. Los problemas identificados —fragmentación informativa, ausencia de orientación al usuario asistente, falta de diseño mobile-first— son exactamente los que el proceso de investigación, ideación y prototipado del curso permite detectar y resolver. La diferencia entre una propuesta bien fundamentada y una opinión personal está en la capacidad de argumentar cada decisión con criterios cuantificables y referencias metodológicas sólidas. Eso es precisamente lo que este proceso enseña.
+ 
 ---
-
+ 
 ## Referencias
-
+ 
 - Nielsen, J. (1994). *10 Usability Heuristics for User Interface Design*. Nielsen Norman Group.
 - Norman, D. (2013). *The Design of Everyday Things* (Revised Edition). Basic Books.
 - Rohrer, C. (2014). *When to Use Which User-Experience Research Methods*. Nielsen Norman Group.
@@ -309,7 +345,6 @@ Este caso me ha permitido verificar que el proceso UX aprendido durante el curso
 - EcoMercado UGR: [improntagranada.es](https://improntagranada.es/evento/jornada-inaugural-del-ecomercado-ugr/)
 - Xarxa de Consum Solidari: [xarxaconsum.org](https://xarxaconsum.org/es/mercados-de-campesinos/)
 - Nuestras Huertas: [nuestrashuertas.com](https://www.nuestrashuertas.com/)
-
 ---
-
+ 
 *Trabajo elaborado para la asignatura Diseño de Interfaces de Usuario — ETSI Informática y Telecomunicaciones, Universidad de Granada. Curso 2025/26.*
