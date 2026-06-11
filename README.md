@@ -60,6 +60,10 @@ A partir de esta evaluación nos dimos cuenta que realmente la accesibilidad no 
 
 #### A.5 Accesibilidad
 
+El ejercicio de accesibilidad se aplicó sobre la web del Ayuntamiento de Almería, obteniendo una valoración total de 52/100, lo que indica una accesibilidad no demasiado buena con algunos defectos importantes para tratarse de una institución pública que debería de garantizar su fácil accesibilidad.
+
+Usando WAVE, mi grupo y yo identificamos 5 errores críticos: 1 imagen enlazada sin texto alternativo, 4 enlaces vacíos sin descripción y 2 errores de contraste muy bajo, todos bajo el criterio Perceptible de las WCAG (criterios 1.1.1 y 1.4.3). Con Funkify simulamos distintas discapacidades y comprobé que usuarios con visión borrosa no podían localizar eventos culturales por la alta densidad de elementos y banners dinámicos superpuestos, que usuarios con dislexia tenían dificultades reales con los titulares de noticias por falta de descripción alternativa en imágenes, y que usuarios con enfermedades como el parkinson encontraban los enlaces del menú demasiado pequeños y difíciles de clicar. Además, otro defecto que encontramos fue la imposibilidad de cambiar de idioma por si algún extranjero quisiera consultar y leer esta página..
+Como aspectos positivos, la web sí incorpora un widget de accesibilidad propio con opciones de contraste, fuente y máscara de lectura, skip links y estructura semántica con H1/H2, lo que indica intención de cumplimiento pero una ejecución incompleta. La principal conclusión fue que la accesibilidad automática (WAVE) detecta fallos técnicos, pero la simulación con Funkify aporta los problemas para la visión humana de aquellas peersonas con distintas capacidades, esto es algo que un editor automático no puede encontrar.
 
 #### A.6 Portfolio con Figma Make
 
@@ -74,44 +78,43 @@ La primera práctica estuvo centrada en comprender el problema antes de empezar 
 
 También realizamos un Competitive Analysis comparando Goiko con Five Guys y The Champions Burger. Este análisis nos permitió identificar qué elementos diferenciaban a cada competidor y qué oportunidades de mejora existían para Goiko. A partir de ahí desarrollamos dos Personas representativas de nuestro público objetivo y sus correspondientes User Journey Maps, lo que nos ayudó a comprender mejor sus motivaciones, necesidades y posibles frustraciones durante el proceso de búsqueda y compra de una hamburguesa.
 
-Finalmente, realizamos una Usability Review de la web actual de Goiko. Gracias a esta evaluación detectamos fortalezas importantes, como la calidad visual de los productos y la facilidad para acceder a la carta, pero también problemas como la ausencia de buscador interno, la falta de filtros en la carta o la inexistencia de un indicador de progreso durante el proceso de pedido. Estos hallazgos fueron fundamentales para orientar el resto del proyecto.
+Finalmente, realizamos una Usability Review de la web actual de Goiko. Gracias a esta evaluación detectamos fortalezas importantes, como la calidad visual de los productos y la facilidad para acceder a la carta, pero también problemas como la ausencia de buscador interno, la falta de filtros en la carta o la inexistencia de un indicador de progreso durante el proceso de pedido. Esto nos dió ideas para mejorar la web de Goiko.
 
 #### B.2 UX Design (P2)
 
 Una vez comprendido el contexto y las necesidades de los usuarios, comenzamos la fase de ideación. Para ello elaboramos un Empathy Map y un Feedback Capture Grid, herramientas que nos permitieron transformar los problemas detectados en oportunidades concretas de diseño.
 
-La principal idea surgida durante esta fase fue la creación de un sistema de hamburguesas personalizadas, permitiendo al usuario elegir ingredientes, guardar combinaciones y reutilizarlas en futuros pedidos. Esta funcionalidad nació directamente de las preguntas e inquietudes detectadas durante el análisis previo.
+La principal idea surgida durante esta fase fue la creación de un sistema de hamburguesas personalizadas, permitiendo al usuario elegir ingredientes, guardar combinaciones y reutilizarlas en futuros pedidos. Esta funcionalidad se nos ocurrió ya que es algo que la gente, incluso nosotros, hemos reclamado alguna vez.
 
-Posteriormente definimos el alcance del proyecto mediante un Scope Canvas, donde establecimos qué funcionalidades formarían parte de la propuesta y cuáles quedarían fuera. También desarrollamos un Task Flow para representar gráficamente el proceso de pedido y elaboramos la arquitectura de información mediante un Sitemap y un ejercicio de Labelling, donde definimos la estructura de navegación y las etiquetas principales de la aplicación. Esta práctica me permitió entender la importancia de organizar correctamente los contenidos antes de empezar a diseñar pantallas.
-
-Finalmente, realizamos una serie de Wireframes de baja fidelidad que sirvieron como primera representación visual de la solución y nos permitieron validar la distribución de la información antes de invertir tiempo en el diseño visual.
+El **Scope Canvas** fue útil para evitar el *scope creep* antes de prototipar, es decir, hacer cosas que le dieran demasiada complejidad a nuestra funcionalidad. La elaboración del **Sitemap** y el **labelling** fue mi primera aplicación real de arquitectura de información. Además aprendí que las etiquetas no son neutras, por ejemplo los botones de "Pedir" o de "Realizar un pedido" reducen la carga cognitiva de forma drástica y también nos dimos cuenta que la estructura de navegación por la página debe ser acorde a la mente del usuario, no la organización interna del negocio.
 
 #### B.3 Mi UX-Case Study (diseño) (P3)
 
-En esta fase transformamos las ideas y estructuras definidas anteriormente en una propuesta visual completa. El primer paso fue la creación de un Moodboard, que nos ayudó a definir la dirección estética del proyecto tomando como referencia la identidad visual de Goiko: colores oscuros, fotografías de producto llamativas y una estética premium.
+En esta fase transformamos las ideas y estructuras definidas anteriormente en una propuesta visual completa. 
+La creación del Moodboard superó la simple selección de referencias, nos sirvió para establecer el marco del diseño en el proyecto. Tomando como base la identidad de Goiko (colores oscuros y fotografía premium). Concluimos que mantener esta estética no solo respeta el branding, sino que genera un entorno de familiaridad que reduce la desconfianza del usuario en entornos digitales.
 
-A continuación diseñamos una Landing Page que actuara como punto de entrada principal para los usuarios. En ella destacamos los accesos rápidos a las funcionalidades más importantes, especialmente la creación de hamburguesas personalizadas y la reserva de mesas.
+El diseño de la Landing Page se enfocó como el punto crítico del embudo de conversión. En lugar de saturar al usuario, se aplicaron principios de jerarquía visual y reducción de la carga cognitiva, priorizando los accesos rápidos a la personalización de hamburguesas y reserva de mesas. La conclusión clave de esta estructura es que al minimizar los pasos iniciales, se reduce la tasa de abandono potencial
 
-Posteriormente desarrollamos las Guidelines del proyecto, donde definimos los patrones de interfaz utilizados, la navegación, los componentes y la jerarquía visual. Gracias a este trabajo conseguimos mantener una experiencia coherente entre todas las pantallas.
+El desarrollo de las Guidelines (patrones de interfaz, navegación y componentes) funcionó como el sistema de diseño del proyecto. La aportación principal de este documento fue garantizar la consistencia cognitiva. Al unificar el comportamiento de los botones y menús, el usuario no tiene que reaprender a usar la aplicación en cada pantalla nueva, lo que mejora la curva de aprendizaje y la usabilidad general.
 
-El resultado final fue un conjunto de Mockups de alta fidelidad y un prototipo interactivo en Figma que incluía todo el flujo de pedido: pantalla principal, personalización de hamburguesas, carrito, formulario de pago y confirmación del pedido. Este fue probablemente el apartado más enriquecedor, ya que permitió ver cómo todas las decisiones tomadas durante las fases anteriores cobraban sentido dentro de una experiencia completa.
-
-Además, durante la práctica de exportación desarrollamos una versión funcional de la Landing Page en React, desplegada online, lo que nos permitió trasladar parte del diseño conceptual a una implementación real.
+No planteamos el prototipo interactivo en Figma solo como una entrega técnica de pantallas bonitas, sino como la prueba real para comprobar si el flujo de usuario (user flow) funcionaba en la práctica. Al poder simular todo el recorrido (desde la pantalla de inicio hasta la confirmación del pago) nos encargamos de comprobar que las decisiones previas que tomamos sobre la arquitectura de nestra página eran las más correctas y eficientes. La conclusión clave de este paso es que aplicar un Diseño Centrado en el Usuario nos permitió detectar y resolver los problemas de navegación de forma visual, antes de entrar a la fase de programación, donde cualquier cambio habría sido mucho más complejo y costoso.
 
 #### B.4 Exportación y documentación(P4)
 Aquí pasamos el landing page a una aplicación de React.js, pero no pudimos usar el código que genera figma por lo que lo creamos desde cero nostros mismos.
+Esto nos permitió seguir aprendiendo el lenguaje de React.js un poco más, ya que mi conocimiento en React.js era mínimo pero mi compañero si tenía más nivel, lo cuál me ayudó a aprender más sobre react y a mi compañero a recordar cosas que ya sabía.
 
 #### B.5 Pruebas de Evaluación(P5)
 
 La última práctica estuvo dedicada a comprobar si las decisiones tomadas durante el diseño realmente mejoraban la experiencia de usuario. Para ello realizamos un estudio comparativo entre nuestra propuesta de Goiko (Caso A) y el proyecto de otro grupo, la cafetería Despiertoo (Caso B).
+No la planteamos como un simple trámite de testeo, sino como la oportunidad real de validar mediante datos empíricos si nuestras decisiones de diseño realmente optimizaban la experiencia de usuario frente a otras alternativas del mercado.
 
-El A/B Testing mostró resultados favorables para nuestra propuesta. Los usuarios consiguieron completar las tareas con una tasa media de éxito del 83,34 %, empleando menos tiempo y menos interacciones que en el Caso B. Especialmente destacable fue la facilidad para localizar la funcionalidad de personalización de hamburguesas, una de las características principales de nuestro rediseño.
+Al comparar nuestra propuesta de Goiko (Caso A) con el proyecto Despiertoo (Caso B), los datos demostraron la efectividad de nuestro rediseño. Logramos una tasa media de éxito del 83,34 %, reduciendo además el tiempo y el número de interacciones necesarias. La conclusión teórica más importante aquí es que la reducción de la carga cognitiva y la jerarquía visual que planificamos funcionaron en la práctica: los usuarios localizaron la personalización de hamburguesas de inmediato, demostrando que una interfaz intuitiva elimina la frustración y acelera el flujo de conversión.
 
-También aplicamos el cuestionario SUS (System Usability Scale) para obtener una medida estandarizada de la percepción de usabilidad. Los resultados reflejaron una valoración positiva de la facilidad de uso y de la integración de las funcionalidades principales.
+También aplicamos el cuestionario SUS (System Usability Scale) para obtener una medida estandarizada de la percepción de usabilidad. Los resultados reflejaron una valoración positiva de la facilidad de uso y de la integración de las funcionalidades principales, lo cual es clave para la retención de clientes en una app real.
 
-Por otra parte, realizamos un estudio de Eye Tracking mediante GazeMapping sobre la web de Despiertoo. Este análisis nos permitió observar qué elementos captaban la atención de los usuarios y cómo la jerarquía visual influía en su comportamiento. Los mapas de calor mostraron que determinadas zonas concentraban gran parte de las miradas mientras que otras áreas relevantes pasaban prácticamente desapercibidas.
+Por otra parte, realizamos un estudio de Eye Tracking mediante GazeMapping sobre la web de Despiertoo. Este análisis nos permitió observar qué elementos captaban la atención de los usuarios y cómo la jerarquía visual influía en su comportamiento. Los mapas de calor mostraron que determinadas zonas concentraban gran parte de las miradas mientras que otras áreas relevantes pasaban prácticamente desapercibidas. Esto nos aportó una conclusión clave: si no guías la mirada del usuario de forma intencionada a través del diseño, el usuario se pierde, lo que reforzó nuestra decisión de mantener un diseño limpio y enfocado en Goiko.
 
-Finalmente, llevamos a cabo una auditoría de accesibilidad utilizando WAVE y Lighthouse, detectando problemas relacionados con contraste, botones vacíos y navegación. Esta experiencia fue especialmente interesante porque permitió conectar los principios de accesibilidad estudiados en clase con problemas reales presentes en una interfaz.
+Por último, más allá de utilizar las herramientas WAVE y Lighthouse para buscar errores estáticos y obtener una puntuación, estás herramientas nos ayudaron a entender el diseño inclusivo. Detectar problemas reales de contraste y botones vacíos nos hizo comprender que la accesibilidad no es una lista de requisitos secundarios, sino una parte fundamental de la UX. Aprendimos que un error de contraste o la falta de texto y unicamente poner un icono en su lugar no son solo un fallo técnico, sino una barrera real que excluye directamente a usuarios con discapacidades visuales.
 
 ---
 
@@ -121,7 +124,7 @@ La realización de este proyecto me ha permitido recorrer todas las etapas de un
 
 Entre los trabajos desarrollados destacan la elaboración del User Research Plan, el Competitive Analysis, las Personas, los Journey Maps, el Empathy Map, el Scope Canvas, el Sitemap, los Wireframes, el Moodboard, la Landing Page, las Guidelines, el prototipo interactivo en Figma y la implementación parcial en React. Ver cómo todos estos entregables estaban conectados entre sí me ayudó a comprender mejor la metodología UX y la importancia de seguir un proceso estructurado.
 
-Si tuviera que destacar un aprendizaje principal, sería entender que las mejores decisiones de diseño no surgen de la intuición, sino de la investigación y de la validación con usuarios reales. Las pruebas realizadas al final del proyecto demostraron que muchas de las decisiones tomadas durante las primeras fases tenían un impacto directo en la facilidad de uso del producto final.
+Si tuviera que destacar un aprendizaje principal, sería entender que las mejores decisiones de diseño no surgen de la intuición, sino de la investigación y de la validación con usuarios reales. Las pruebas que realizamos al final del proyecto demostraron que muchas de las decisiones tomadas durante las primeras fases tenían un gran impacto en la facilidad de uso del producto final, por tatno, un detalle que parece insignificante en la primera etapa se vuelve crucial en las etapas finales.
 
 ---
 
