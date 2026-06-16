@@ -138,17 +138,11 @@ Si tuviera que destacar un aprendizaje principal, sería entender que las mejore
 El **EcoMercado UGR** es una iniciativa de la Universidad de Granada y la Red Agroecológica de Granada, celebrada mensualmente los jueves en los Paseíllos Universitarios del Campus de Fuentenueva (9:30–14:00 h). Está dentro  del proyecto **Granada Tierra Viva** (Impronta Granada) y reúne a productores locales de proximidad agroecológica. Más allá de un mercado, es un espacio de aprendizaje, intercambio y conexión entre sostenibilidad, territorio y comunidad universitaria.
 
 El **problema central** es que el EcoMercado carece de una página web propia. La información se encuentra en distinta páginas que no están diseñadas específicamente para ese propósito, sino para otros lo que hace que ofrece una experiencia mala a aquellas personas que si quieran visitar el EcoMercado.
-
----
  
 ### 2a. Análisis del referente: Mercat de Pages — Xarxa de Consum Solidari (xarxaconsum.org)
- 
 **Justificación de la elección:** Hemos escogido esta página porque creo que es la que nos va a permitir comparar mejor con el Ecomercado UGR. He descartado Nuestras Huertas porque su propuesta está maś destinada a la venta online de productos, y quizás se aleja más de nuestra página y no aporta nada importante a nuestro mercado.
 
-
 Voy a realizar el análisis intentando ser lo más técnico posible, aplicando las **heurísticas de Nielsen** y el marco de **diseño centrado en usuario** como referencia objetiva.
- 
----
  
 #### ¿Quién es el usuario y qué necesita?
 
@@ -158,33 +152,22 @@ Seguramente esta consulta la haga desde un móvil, consultandolo un dia antes o 
     - Conocer el horario
     - Saber que productos se va a encontrar
 Nuestra web no está pensada para nada de eso, lo que implica un grave problema
-
----
  
 #### Puntos fuertes
 La sección "Mercados de campesinos" está accesible desde el menú principal de forma directa, cumpliendo **H3 de Nielsen** (*control y libertad del usuario*) y minimizando la profundidad de navegación para la tarea principal,ya que solo es necesario un clic.
-
----
  
 #### Problemas de usabilidad y UX detectados
  
 **1. Disonancia de contexto en la página principal (severidad: alta)**
-
 La pantalla de inicio muestra un carrusel con fotografías de cooperación internacional y su texto correspondiente, esto puede hacer pensar al usuario que llega a la página que no está en el sitio correcto, puede desorientarlo. Aplicando el concepto de **modelo mental** de Norman (2013), el visitante espera el patrón "mercado ecológico" (productos frescos, fecha próxima, mapa) y encuentra el patrón "ONG de cooperación internacional". Este problema obliga al usuario a tener que invertir tiempo y esfuerzo en encontrar la seccion de "mercado de campesions" para poder encontrar lo que busca, lo que aumenta la probabilidad de abandono en los primeros segundos.
 
- 
 **2. Sobrecarga de acciones sin jerarquía (severidad: alta)**
 En la sección de mercados, cada localización presenta 4 botones simultáneos en 3 colores distintos: "Localización" (verde), "Grupo de Telegram" (azul), "Haz un pedido" (azul) y "Grupo de WhatsApp" (verde). Esto viola **H8** (*diseño estético y minimalista*): se expone al usuario a todas las opciones posibles sin priorizar la tareas más común, sobrecargando la página y aumentando el tiempo de decisión.
 
- 
 **3. Layout no adaptado a móvil (severidad: crítica)**
-
 En la sección de "Mercados de campesinos" las columnas se comprimen sin reflow adecuado y los 4 botones de cada mercado se apilan en vertical, ocupando casi toda la pantalla y obligando al usuario a hacer un scroll extenso para llegar al mercado siguiente. Este es el fallo más crítico dado que el contexto de uso más frecuente se produce desde el teléfono.
- 
----
  
 #### Valoración global del referente
-
 | Criterio | Valoración | Justificación |
 |---|---|---|
 | Tarea principal resuelta en ≤2 clics | ✓ |A pesar de que la págna principal desoriente,con un clic se llega al sitio deseado |
@@ -194,9 +177,7 @@ En la sección de "Mercados de campesinos" las columnas se comprimen sin reflow 
 | Reconocimiento visual de productores | ✓ | Foto + nombre + categoría |
  
 La web cumple como canal institucional de la ONG pero falla como herramienta orientada al usuario asistente. La arquitectura refleja la estructura organizativa interna, no el modelo mental del visitante que quiere saber cuándo y dónde ir a comprar.
- 
----
- 
+  
 ### 2b. Insights y Propuesta de Valor para EcoMercado UGR
  
 #### Insights extraídos del análisis
@@ -206,21 +187,15 @@ La web cumple como canal institucional de la ONG pero falla como herramienta ori
 **Insight 2** — Diseñar pensando primero en el ordenador sería el peor error técnico. La web de referencia está hecha para pantallas grandes y en el móvil se ve fatal. Como nuestro público va a ser mayoritariamente universitario y van a entrar a la web desde el teléfono mientras están en el campus, hacer un diseño mobile-first (pensado primero para el móvil) no es un extra que molaría tener, es algo obligatorio desde el primer día.
 
 **Insight 3 — Menos canales, más claridad.** El referente ofrece 4 canales de contacto por mercado sin jerarquía. La propuesta para el EcoMercado debe priorizar: un CTA de mapa y un CTA de calendario, y nada más en el primer nivel de interacción.
-
----
  
 #### Personas
- 
 **Lucía, 22 años, estudiante de Biología (Campus Fuentenueva)**
 Pasa por los Paseíllos a diario pero no siempre sabe cuándo hay mercado. Le interesan los productos locales pero la falta de información clara hace que se entere por casualidad. Dispositivo principal: móvil. Frustración actual: *"He llegado cuando ya estaban recogiendo"*.
-
  
 **Andrés, 47 años, profesor titular de la ETSIIT**
 Consume productos ecológicos regularmente y valora conocer el origen de lo que come. Reserva el jueves del mercado pero tiene agenda ajustada. Frustración actual: *"No sé qué productores van a ir hasta que llego"*.
  
 Ambas personas comparten la misma tarea inicial (¿hay mercado y cuándo?) pero divergen en profundidad de uso: Lucía necesita consulta rápida; Andrés necesita explorar los productos que encontrará.
-
- 
 ---
  
 #### Propuesta de diseño: EcoMercado UGR
@@ -228,7 +203,6 @@ Ambas personas comparten la misma tarea inicial (¿hay mercado y cuándo?) pero 
 **Justificación del formato:** dado el perfil de usuario (universitario, móvil como dispositivo principal, consulta en movilidad), se propone una web accesible sin necesidad de descargar nada. Este enfoque aplica el principio de **diseño orientado al contexto de uso**.
  
 **Principios aplicados y justificación:**
- 
 - **Mobile-first**: la pantalla principal responde "¿hay mercado este jueves?" sin scroll. La tarjeta hero muestra fecha, horario y ubicación en el primer viewport, con dos botones de acción claros: "Ver mapa" (outlined) y "+ Calendario" (filled verde). La tarea de mayor frecuencia ocupa el nivel 0 de la interfaz.
 - **Progressive disclosure**: la home muestra solo lo esencial. Las categorías de productores (Huerta, Quesos, Miel) permiten anticipar qué hay sin entrar en detalle; el usuario que quiere profundizar navega a la pantalla de Productores, donde cada uno tiene foto, categoría etiquetada y descripción breve. Resuelve directamente la sobrecarga de información detectada en el referente.
 - **H4 Nielsen — Consistencia y estándares**: bottom navigation bar fija con 4 secciones (Inicio, Productores, Calendario, Aprende), consistente en todas las pantallas con la pestaña activa destacada en verde. 
@@ -257,9 +231,8 @@ EcoMercado UGR (PWA)
     └── Red Agroecológica / Granada Tierra Viva / Impronta UGR
 ```
 El labelling sigue el principio de economía de lenguaje: "Productores" en lugar de "Nuestros productores agroecológicos participantes"; "Aprende" en lugar de "Contenido educativo y divulgativo". Las etiquetas cortas son más escaneables en móvil y reducen la carga cognitiva en la barra de navegación.
- 
+
 ---
- 
 #### Mockup — Pantallas (mobile, 390px)
 Enlace a figma: https://fence-pop-58809035.figma.site
 
@@ -273,10 +246,7 @@ El diseño resultante consta de cuatro pantallas que cubren el flujo completo de
 - La pantalla de Productores lista los participantes del mes con avatar, nombre, etiqueta de categoría (Verduras, Lácteos, Apicultura, Panadería) y una línea de descripción. Esta estructura aplica H6 de Nielsen (reconocimiento antes que recuerdo): el usuario identifica visualmente si hay un productor de su interés sin necesidad de leer texto en detalle, resolviendo directamente la frustración de Andrés ("no sé qué productores van a ir hasta que llego").
 - La pantalla de Calendario presenta una vista mensual con el jueves 26 destacado en verde, reforzando visualmente el estado del sistema (H1 Nielsen). Las tarjetas de próximas ediciones bajo el calendario ofrecen la misma información en formato lista para usuarios que prefieren ese patrón de lectura.
 - La pantalla de Aprende agrupa el contenido educativo en tres tarjetas (Recetas de temporada, ¿Qué es la agroecología?, Charlas y talleres) más un bloque de newsletter. Esta sección transforma el EcoMercado de evento puntual en comunidad digital activa, diferenciándolo del referente analizado que no ofrece ningún contenido de valor entre ediciones.
-
- 
 ---
- 
 #### Comparativa propuesta vs. referente
  
 | Dimensión | Mercado de campesinos (referente) | EcoMercado UGR (propuesta) |
@@ -289,9 +259,8 @@ El diseño resultante consta de cuatro pantallas que cubren el flujo completo de
 | Componente educativo/comunidad | No | Sí |
 | Accesibilidad WCAG AA por diseño | No evaluada | Sí, desde el sistema de colores |
 | Presencia digital propia | No (embebida en ONG) | Sí |
- 
----
- 
+
+
 ### 2c. Reflexión y autoevaluación
  
 #### Lo que he aplicado en prácticas y tiene relación con este caso
