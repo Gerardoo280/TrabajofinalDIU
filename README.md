@@ -4,7 +4,7 @@
 **Alumno:** Gerardo Pérez Triviño 
 
 
-https://fence-pop-58809035.figma.site
+
 
 
 ---
@@ -261,6 +261,8 @@ El labelling sigue el principio de economía de lenguaje: "Productores" en lugar
 ---
  
 #### Mockup — Pantallas (mobile, 390px)
+Enlace a figma: https://fence-pop-58809035.figma.site
+
  <img width="568" height="1124" alt="image" src="https://github.com/user-attachments/assets/c02eb154-fcda-4ef1-ac7c-2985aace6547" />
  <img width="568" height="1124" alt="image" src="https://github.com/user-attachments/assets/c4b412f8-8918-40d6-a7d8-359ddb22eae3" />
 <img width="568" height="1124" alt="image" src="https://github.com/user-attachments/assets/e96b0d62-8af9-42f1-972a-506ac7f7a60d" />
