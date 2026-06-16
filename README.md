@@ -179,7 +179,6 @@ En la sección de "Mercados de campesinos" las columnas se comprimen sin reflow 
 La web cumple como canal institucional de la ONG pero falla como herramienta orientada al usuario asistente. La arquitectura refleja la estructura organizativa interna, no el modelo mental del visitante que quiere saber cuándo y dónde ir a comprar.
   
 ### 2b. Insights y Propuesta de Valor para EcoMercado UGR
- 
 #### Insights extraídos del análisis
 
 **Insight 1** — Tenemos que aprovechar la parte educativa y de comunidad, porque va a ser nuestro gran diferencial. En la web que estamos usando de referencia solo viene una lista sosa de los productores, pero no se cuenta su historia, de dónde vienen o cómo trabajan. Como el EcoMercado va a ser de la UGR, el contexto universitario es nuestro punto fuerte. En nuestra futura web tenemos que meter todo este contenido para educar al usuario; esto es lo que de verdad nos va a diferenciar del resto y lo que justifica que creemos una página propia.
@@ -196,8 +195,8 @@ Pasa por los Paseíllos a diario pero no siempre sabe cuándo hay mercado. Le in
 Consume productos ecológicos regularmente y valora conocer el origen de lo que come. Reserva el jueves del mercado pero tiene agenda ajustada. Frustración actual: *"No sé qué productores van a ir hasta que llego"*.
  
 Ambas personas comparten la misma tarea inicial (¿hay mercado y cuándo?) pero divergen en profundidad de uso: Lucía necesita consulta rápida; Andrés necesita explorar los productos que encontrará.
+
 ---
- 
 #### Propuesta de diseño: EcoMercado UGR
  
 **Justificación del formato:** dado el perfil de usuario (universitario, móvil como dispositivo principal, consulta en movilidad), se propone una web accesible sin necesidad de descargar nada. Este enfoque aplica el principio de **diseño orientado al contexto de uso**.
@@ -248,7 +247,6 @@ El diseño resultante consta de cuatro pantallas que cubren el flujo completo de
 - La pantalla de Aprende agrupa el contenido educativo en tres tarjetas (Recetas de temporada, ¿Qué es la agroecología?, Charlas y talleres) más un bloque de newsletter. Esta sección transforma el EcoMercado de evento puntual en comunidad digital activa, diferenciándolo del referente analizado que no ofrece ningún contenido de valor entre ediciones.
 ---
 #### Comparativa propuesta vs. referente
- 
 | Dimensión | Mercado de campesinos (referente) | EcoMercado UGR (propuesta) |
 |---|---|---|
 | Tarea principal resuelta en ≤2 clics | ✓ | ✓ |
@@ -260,9 +258,7 @@ El diseño resultante consta de cuatro pantallas que cubren el flujo completo de
 | Accesibilidad WCAG AA por diseño | No evaluada | Sí, desde el sistema de colores |
 | Presencia digital propia | No (embebida en ONG) | Sí |
 
-
 ### 2c. Reflexión y autoevaluación
- 
 #### Lo que he aplicado en prácticas y tiene relación con este caso
 Mirando el trabajo que hice durante el curso, hay varias cosas que se podrían aplicar directamente a este caso de estudio.
 Lo más evidente es todo lo de investigación con respecto al usuario de P1: el User Research Plan, las personas y la Usability Review. De hecho, el análisis que he hecho del referente (Xarxa Consum) sigue exactamente la misma lógica que la Usability Review de Goiko: identificar problemas, asignarles severidad y justificarlos con heurísticas de Nielsen. La diferencia es que en el EcoMercado el usuario tiene un perfil muy concreto (estudiante universitario que pasa por el campus) y eso habría condicionado mucho las personas desde el principio.
