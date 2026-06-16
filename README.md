@@ -249,7 +249,7 @@ El diseño resultante consta de cuatro pantallas que cubren el flujo completo de
 #### Comparativa propuesta vs. referente
 | Dimensión | Mercado de campesinos (referente) | EcoMercado UGR (propuesta) |
 |---|---|---|
-| Tarea principal resuelta en ≤2 clics | ✓ | ✓ |
+| Tarea principal resuelta en ≤2 clics | ✗ | ✓ |
 | Mobile-first | ✗ | ✓ |
 | Info de próxima edición visible | ✓ | ✓ |
 | Jerarquía clara de acciones | ✗ | ✓ (2 CTAs max por pantalla) |
